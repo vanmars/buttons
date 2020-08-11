@@ -27,4 +27,28 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+  // Functions for cat-dog.html
+  $("#meow").click(function() {
+    $("#dog-text").append("<p>Bark</p>");
+  });
+
+  $("#bark").click(function() {
+    $("#cat-text").append("<p>Meow</p>");
+  });
+
+  $("#cat-clickable").click(function(){
+    $("#cat-clickable").after("<img src='img/cat.jpg'>");
+    $(".cat img").click(function(){
+      $(this).remove();
+    });
+  });
+
+  $("#dog-clickable").click(function(){
+    $("#dog-clickable").after("<img src='img/dog.jpeg'>");
+    $(".dog img").click(function(){
+      $(this).remove();
+    });
+  });
+
 });

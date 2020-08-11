@@ -1,0 +1,13 @@
+#cat-clickable, #dog-clickable {
+  cursor: pointer;
+  color: blue;
+}
+
+#cat-clickable:hover, #dog-clickable:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 300px;
+  height:auto;
+}
