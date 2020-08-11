@@ -19,4 +19,12 @@ $(document).ready(function() {
     $("ul#user").prepend("<li>Stop copying me!</li>");
     $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
   });
+
+  $("#mainHeader").click(function(){
+    $("#mainHeader").css("background-color", "green");
+    $("#mainHeader").append("<p>Place text here</p>");
+    $("#mainHeader p").click(function(){
+      $(this).remove();
+    });
+  });
 });
